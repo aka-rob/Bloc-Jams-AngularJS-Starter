@@ -37,9 +37,9 @@
     };
 
     Fixtures.getCollection = function(numberOfAlbums) {
-      var albumColleciton = [];
+      var albums = [];
       for (var i = 0; i < numberOfAlbums; i++) {
-        albumCollection.push(angular.copy(albumPicasso);
+        albums.push(albumPicasso);
       }
       return albums;
     };
