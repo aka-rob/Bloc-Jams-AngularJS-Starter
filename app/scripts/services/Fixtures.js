@@ -17,7 +17,6 @@
       ]
     };
 
-    // Another album example
     var albumMarconi = {
       title: 'The Telephone',
       artist: 'Guglielmo Marconi',
@@ -35,6 +34,14 @@
 
     Fixtures.getAlbum = function() {
       return albumPicasso;
+    };
+
+    Fixtures.getCollection = function(numberOfAlbums) {
+      var albumColleciton = [];
+      for (var i = 0; i < numberOfAlbums; i++) {
+        albumCollection.push(angular.copy(albumPicasso);
+      }
+      return albums;
     };
 
     return Fixtures;
