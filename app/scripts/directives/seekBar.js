@@ -52,6 +52,15 @@
         };
 
         /**
+        * @function scope.thumbStyle
+        * @desc Updates position of the thumb style CSS
+        * @returns {String}
+        */
+        scope.thumbStyle = function() {
+          return {left: percentString()};
+        };
+
+        /**
         * @function scope.onClickSeekBar
         * @desc click handler to calculate percent
         */
@@ -67,7 +76,7 @@
         scope.trackThumb = function() {
           $document.bind('mousemove.thumb', function(event) {
             var percent = calculatePercent(seekBar, event);
-            scope.$apply(function() {
+            scope.$apply( function() {
               scope.value = percent * scope.max;
             });
           });
