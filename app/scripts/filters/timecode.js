@@ -21,7 +21,7 @@
 
 
 
-      return buzz.toTimer(seconds, true);
+      return buzz.toTimer(seconds);
     };
   }
 
